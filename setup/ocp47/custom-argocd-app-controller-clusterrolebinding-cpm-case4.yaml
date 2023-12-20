@@ -4,8 +4,8 @@ metadata:
   name: openshift-gitops-argocd-application-controller
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-argocd-application-controller
-    namespace: ace-gitops
+    name: openshift-gitops-cntk-argocd-server
+    namespace: cpm-case4
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -17,8 +17,8 @@ metadata:
   name: openshift-gitops-cntk-argocd-application-controller
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-cntk-argocd-application-controller
-    namespace: ace-gitops
+    name: openshift-gitops-cntk-argocd-server
+    namespace: cpm-case4
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
