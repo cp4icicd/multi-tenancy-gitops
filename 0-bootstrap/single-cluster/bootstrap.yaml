@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bootstrap-single-cluster
+  name: bootstrap-single-cluster-1-infra
   namespace: argocd
 spec:
   destination:
-    namespace: openshift-gitops/1-infra
+    namespace: argocd
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 0-bootstrap/single-cluster
+    path: 0-bootstrap/single-cluster/1-infra
     repoURL: https://github.com/cp4icicd/multi-tenancy-gitops.git
     targetRevision: master
   syncPolicy:
