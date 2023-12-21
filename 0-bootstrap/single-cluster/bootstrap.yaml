@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: bootstrap-single-cluster-1-infra
   namespace: argocd
+  labels:
+    app.kubernetes.io/instance: some-application
 spec:
   destination:
     namespace: argocd
