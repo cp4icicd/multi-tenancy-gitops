@@ -4,7 +4,6 @@ metadata:
   name: bootstrap-single-cluster
   namespace: argocd
   labels:
-    app.kubernetes.io/instance: some-application
 spec:
   destination:
     namespace: argocd
